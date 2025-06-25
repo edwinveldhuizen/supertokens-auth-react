@@ -52,7 +52,8 @@ export default [
         output: [
             {
                 dir: "lib/build",
-                format: "commonjs",
+                format: "es",
+                preserveModules: true,
                 interop: "auto",
                 sourcemap: false,
                 chunkFileNames: (chunkInfo) => {
